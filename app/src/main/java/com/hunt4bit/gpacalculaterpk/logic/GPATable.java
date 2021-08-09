@@ -1,4 +1,4 @@
-package com.hunt4bit.gpacalculaterpk;
+package com.hunt4bit.gpacalculaterpk.logic;
 
 public class GPATable { // This class is holding the Gpa Calculation Table  for the Universities
 

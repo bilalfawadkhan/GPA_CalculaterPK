@@ -1,4 +1,4 @@
-package com.hunt4bit.gpacalculaterpk;
+package com.hunt4bit.gpacalculaterpk.logic;
 
 public class GpaCal { // This is the main class that will be called in the GUI of Adnroid to handle GPA calculation according to each university
     GPATable gpaTable = new GPATable();
