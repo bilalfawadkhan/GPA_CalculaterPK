@@ -56,25 +56,27 @@
         app:cardCornerRadius="12dp"
         android:layout_margin="12dp"
         >
+
         <LinearLayout
+            android:id="@+id/furcBut"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:padding="16dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
 
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:src="@drawable/furc_icon" />
+
             <TextView
-                android:layout_marginTop="12dp"
-                android:textColor="#6f6f6f"
-                android:text="FURC"
-                android:textSize="18sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:layout_marginTop="12dp"
+                android:text="FURC"
+                android:textColor="#6f6f6f"
+                android:textSize="18sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -88,6 +90,7 @@
         android:layout_margin="12dp"
         >
         <LinearLayout
+            android:id="@+id/fastBut"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -118,6 +121,7 @@
         android:layout_margin="12dp"
         >
         <LinearLayout
+            android:id="@+id/bahriaBut"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -147,6 +151,7 @@
         android:layout_margin="12dp"
         >
         <LinearLayout
+            android:id="@+id/custBut"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
