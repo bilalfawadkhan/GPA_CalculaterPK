@@ -34,10 +34,10 @@
                 android:textColor="#ffffff"/>
 
             <ImageView
-                android:layout_alignParentRight="true"
                 android:layout_width="62dp"
                 android:layout_height="62dp"
-                android:src="@drawable/furc_background"/>
+                android:layout_alignParentRight="true"
+                android:src="@drawable/furc_background" />
         </RelativeLayout>
 <GridLayout
     android:layout_width="match_parent"
@@ -48,6 +48,7 @@
     android:columnOrderPreserved="false">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/furcBut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
@@ -58,7 +59,7 @@
         >
 
         <LinearLayout
-            android:id="@+id/furcBut"
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -85,12 +86,13 @@
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
+        android:id="@+id/fastBut"
         app:cardElevation="6dp"
         app:cardCornerRadius="12dp"
         android:layout_margin="12dp"
         >
         <LinearLayout
-            android:id="@+id/fastBut"
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -112,6 +114,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/bahriaBut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
@@ -121,7 +124,7 @@
         android:layout_margin="12dp"
         >
         <LinearLayout
-            android:id="@+id/bahriaBut"
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -141,7 +144,9 @@
                 />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/custBut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_columnWeight="1"
@@ -151,7 +156,7 @@
         android:layout_margin="12dp"
         >
         <LinearLayout
-            android:id="@+id/custBut"
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
