@@ -3,6 +3,7 @@ package com.hunt4bit.gpacalculaterpk;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 public class marks_enter extends AppCompatActivity {
 
@@ -10,7 +11,6 @@ public class marks_enter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_marks_enter);
-
 
     }
 }

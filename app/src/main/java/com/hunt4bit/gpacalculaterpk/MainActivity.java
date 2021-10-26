@@ -2,6 +2,7 @@ package com.hunt4bit.gpacalculaterpk;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,14 +18,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        LinearLayout  furcButton = (LinearLayout) findViewById(R.id.furcBut);
-        LinearLayout  fastButton = (LinearLayout) findViewById(R.id.fastBut);
-        LinearLayout  bahriaButton = (LinearLayout) findViewById(R.id.bahriaBut);
-        LinearLayout  custButton = (LinearLayout) findViewById(R.id.custBut);
+        CardView fastButton = findViewById(R.id.fastBut);
+        CardView bahriaButton = findViewById(R.id.bahriaBut);
+        CardView custButton = findViewById(R.id.custBut);
+        CardView furcButton = findViewById(R.id.furcBut);
+
+
         furcButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoscreen(v,"FURc");
+                gotoscreen(v,"FURC");
             }
         });
         fastButton.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         bahriaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoscreen(v,"BAHRIA");
+                gotoscreen(v,"BU");
             }
         });
         custButton.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +59,9 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         isClicked = true;
+
         Intent intent = new Intent(this,popActivity.class);
+        intent.putExtra("uniName", uniName);
         startActivity(intent);
         view.postDelayed(new Runnable() {
 
